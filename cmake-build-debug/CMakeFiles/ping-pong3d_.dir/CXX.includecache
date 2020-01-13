@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eba/CLionProjects/ping-pong3d_/headers/Window.h
+GL/gl.h
+-
+GL/glut.h
+-
+iostream
+-
+
+/home/eba/CLionProjects/ping-pong3d_/src/Window.cpp
+GL/glut.h
+-
+cstring
+-
+../headers/Window.h
+/home/eba/CLionProjects/ping-pong3d_/headers/Window.h
+

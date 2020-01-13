@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/recive.dir/recive.cpp.o CMakeFiles/recive.dir/headers/Socket.cpp.o  -o recive 
