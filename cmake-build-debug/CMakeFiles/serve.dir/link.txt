@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/serve.dir/recive.cpp.o CMakeFiles/serve.dir/headers/Socket.cpp.o  -o serve 

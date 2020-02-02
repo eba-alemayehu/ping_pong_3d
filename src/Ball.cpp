@@ -10,7 +10,7 @@
 using namespace std;
 
 void Ball::render() {
-    glColor3f(1.0, 0.0,0.0);
+    glColor3f(1.0, 0.16666666666,0.48823529411);
     glPolygonMode(GL_FRONT_AND_BACK , GL_FILL);
     glBegin(GL_POLYGON);
         glVertex3f(this->xc, this->yc, this->zc);
@@ -40,7 +40,7 @@ Ball::Ball(GLfloat r, GLfloat xc, GLfloat yc, GLfloat zc, GLfloat player_width, 
     this->yc = yc;
     this->zc = zc;
     this->state = pair<bool, bool>(true, true);
-    this->speed = pair<GLfloat ,GLfloat >(-0.01f, 0.01f);
+    this->speed = pair<GLfloat ,GLfloat >(-0.03f, 0.03f);
     this->player_width = player_width;
     this->thickness = thickness;
 
@@ -86,7 +86,7 @@ void Ball::update(GLfloat w, GLfloat l,GLfloat player1_x, GLfloat player2_x,  vo
 
 void Ball::reset() {
     this->state = pair<bool, bool>(true, true);
-    this->speed = pair<GLfloat ,GLfloat >(-0.01f, 0.01f);
+    this->speed = pair<GLfloat ,GLfloat >(-0.025f, 0.025f);
 
     this->r = this->reset_r;
     this->xc = this->reset_xc;

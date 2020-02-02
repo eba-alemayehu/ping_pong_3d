@@ -19,11 +19,11 @@ private:
     GLfloat tickness;
     GLfloat elevation;
     GLfloat color[3];
-    GLfloat speed = 0.1;
+    GLfloat speed = 0.2;
     GLfloat table_width;
 public:
     Player(pair<GLfloat, GLfloat> loc,GLfloat width, GLfloat tickness, GLfloat elevation, GLfloat table_width);
-    void render();
+    void render(GLfloat* color);
     void update(bool right, bool left);
     GLfloat getPlayerXloc() { return loc.first; }
 };

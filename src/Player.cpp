@@ -12,9 +12,9 @@ Player::Player(pair<GLfloat, GLfloat> loc, GLfloat width, GLfloat tickness, GLfl
     this->table_width = table_width;
 }
 
-void Player::render() {
+void Player::render(GLfloat* color) {
     glBegin(GL_QUADS);
-        glColor3f(0.0, 0.0, 1.0); //blue
+        glColor3fv(color); //blue
         glVertex3f( this->width/2 + loc.first, elevation, this->tickness/2 + loc.second);
         glVertex3f( loc.first - this->width/2 , elevation, this->tickness/2 + loc.second);
         glVertex3f( loc.first - this->width/2, elevation, loc.second - this->tickness/2 );

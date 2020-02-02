@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/eba/Programs/clion-2019.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/eba/.programs/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/eba/Programs/clion-2019.2.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/eba/.programs/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eba/CLionProjects/ping-pong3d_
+CMAKE_SOURCE_DIR = "/home/eba/Course/Coputer graphics/ping_pong_3d"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eba/CLionProjects/ping-pong3d_/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ping-pong3d_.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/ping-pong3d_.dir/flags.make
 
 CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o: ../src/Ball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/src/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Ball.cpp"
 
 CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/src/Ball.cpp > CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Ball.cpp" > CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/src/Ball.cpp -o CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Ball.cpp" -o CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.s
 
 CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o: ../src/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/src/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Window.cpp"
 
 CMakeFiles/ping-pong3d_.dir/src/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/src/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/src/Window.cpp > CMakeFiles/ping-pong3d_.dir/src/Window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Window.cpp" > CMakeFiles/ping-pong3d_.dir/src/Window.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/src/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/src/Window.cpp -o CMakeFiles/ping-pong3d_.dir/src/Window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Window.cpp" -o CMakeFiles/ping-pong3d_.dir/src/Window.cpp.s
 
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o: ../src/Table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/src/Table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp"
 
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/src/Table.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/src/Table.cpp > CMakeFiles/ping-pong3d_.dir/src/Table.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp" > CMakeFiles/ping-pong3d_.dir/src/Table.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/src/Table.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/src/Table.cpp -o CMakeFiles/ping-pong3d_.dir/src/Table.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp" -o CMakeFiles/ping-pong3d_.dir/src/Table.cpp.s
 
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/src/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Player.cpp"
 
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/src/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/src/Player.cpp > CMakeFiles/ping-pong3d_.dir/src/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Player.cpp" > CMakeFiles/ping-pong3d_.dir/src/Player.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/src/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/src/Player.cpp -o CMakeFiles/ping-pong3d_.dir/src/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Player.cpp" -o CMakeFiles/ping-pong3d_.dir/src/Player.cpp.s
 
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ping-pong3d_.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/main.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ping-pong3d_.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/main.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/main.cpp"
 
 CMakeFiles/ping-pong3d_.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/main.cpp > CMakeFiles/ping-pong3d_.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/main.cpp" > CMakeFiles/ping-pong3d_.dir/main.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/main.cpp -o CMakeFiles/ping-pong3d_.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/main.cpp" -o CMakeFiles/ping-pong3d_.dir/main.cpp.s
 
 CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o: CMakeFiles/ping-pong3d_.dir/flags.make
 CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o: ../src/Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o -c /home/eba/CLionProjects/ping-pong3d_/src/Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o -c "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Socket.cpp"
 
 CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eba/CLionProjects/ping-pong3d_/src/Socket.cpp > CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Socket.cpp" > CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.i
 
 CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eba/CLionProjects/ping-pong3d_/src/Socket.cpp -o CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eba/Course/Coputer graphics/ping_pong_3d/src/Socket.cpp" -o CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.s
 
 # Object files for target ping-pong3d_
 ping__pong3d__OBJECTS = \
@@ -155,7 +155,7 @@ ping-pong3d_: CMakeFiles/ping-pong3d_.dir/main.cpp.o
 ping-pong3d_: CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o
 ping-pong3d_: CMakeFiles/ping-pong3d_.dir/build.make
 ping-pong3d_: CMakeFiles/ping-pong3d_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ping-pong3d_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ping-pong3d_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ping-pong3d_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/ping-pong3d_.dir/clean:
 .PHONY : CMakeFiles/ping-pong3d_.dir/clean
 
 CMakeFiles/ping-pong3d_.dir/depend:
-	cd /home/eba/CLionProjects/ping-pong3d_/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eba/CLionProjects/ping-pong3d_ /home/eba/CLionProjects/ping-pong3d_ /home/eba/CLionProjects/ping-pong3d_/cmake-build-debug /home/eba/CLionProjects/ping-pong3d_/cmake-build-debug /home/eba/CLionProjects/ping-pong3d_/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/eba/Course/Coputer graphics/ping_pong_3d" "/home/eba/Course/Coputer graphics/ping_pong_3d" "/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug" "/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug" "/home/eba/Course/Coputer graphics/ping_pong_3d/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ping-pong3d_.dir/depend
 

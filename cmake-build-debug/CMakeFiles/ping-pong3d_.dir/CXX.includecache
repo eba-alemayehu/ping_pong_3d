@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/eba/CLionProjects/ping-pong3d_/headers/Window.h
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
 GL/gl.h
 -
 GL/glut.h
 -
 iostream
 -
-
-/home/eba/CLionProjects/ping-pong3d_/src/Window.cpp
-GL/glut.h
+vector
 -
+
+/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp
 cstring
 -
-../headers/Window.h
-/home/eba/CLionProjects/ping-pong3d_/headers/Window.h
+vector
+-
+../headers/Table.h
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
 

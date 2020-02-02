@@ -22,7 +22,7 @@ private:
     GLint pos_y = 50;
 
     char* title = nullptr;
-    GLfloat zoom = -10.0;
+    GLfloat _zoom = -10.0;
     GLfloat angle = 45.0;
 
     string main_message;
@@ -36,6 +36,8 @@ public:
     void onDisplay(void (* callback)(void));
     void onClick(void (* callback)(int, int, int, int));
     void onUpdate(void (* callback)(int));
+    void rotate(bool forward = true);
+    void zoom(bool zoon_in = true);
     void show();
     void createWindow();
     void displayInit();

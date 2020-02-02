@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ping_pong3d_.dir/main.cpp.o  -o ping_pong3d_ 

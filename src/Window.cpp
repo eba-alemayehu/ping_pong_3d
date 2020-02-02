@@ -8,9 +8,8 @@
 
 Window::Window(int argv, char **argc, char *title) {
     glutInit(&argv, argc);
-    glutInitDisplayMode(GLUT_DOUBLE| GLUT_DEPTH);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     this->title = title;
-    this->init();
 }
 
 void Window::setSize(GLint w, GLint h) {
@@ -29,6 +28,7 @@ void Window::createWindow() {
 }
 
 void Window::show() {
+    this->init();
     glutMainLoop();
 }
 
@@ -69,7 +69,7 @@ void Window::displayInit() {
     glMatrixMode(GL_MODELVIEW);
 
     glLoadIdentity();
-    glTranslatef(0.0, 0.0,this->zoom);
+    glTranslatef(0.0, 0.0,this->_zoom);
     glRotatef(this->angle, 1.0, 0.0, 0.0);
 }
 
@@ -79,7 +79,17 @@ void Window::onUpdate(void (*callback)(int)) {
 
 void Window::render() {
     glColor3f(1.0, 0.2, 1.0);
-    glRasterPos3f(-0.5f, 1.3f, 0);
+    glRasterPos3f(-0.5f, 1.8f, 0);
     for(int i = 0; i < strlen(this->main_message.c_str()); i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, this->main_message[i]);
+}
+
+void Window::rotate(bool forward) {
+    this->angle += (forward)? 0.5: -0.5;
+    glutPostRedisplay();
+}
+
+void Window::zoom(bool zoon_in) {
+    this->_zoom += (zoon_in)? 0.5: -0.5;
+    glutPostRedisplay();
 }

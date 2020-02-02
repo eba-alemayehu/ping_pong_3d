@@ -6,8 +6,10 @@
 #include "headers/Player.h"
 #include "headers/Socket.h"
 
-#define GAME_TIME 5
+#define GAME_TIME 30
 #define ENTER_KEY 13
+#define ROTATE_UP 49
+#define ROTATE_DOWN 113
 
 const unsigned char PLAYER_1_RIGHT = 'l';
 const unsigned char PLAYER_1_LEFT = 'j';
@@ -21,6 +23,7 @@ void onUpdate(int fps);
 void score(int player);
 void onKey(unsigned char, int, int);
 void gameOver();
+void onClick(int button, int state, int x, int y);
 
 Window *win;
 Table *table;
@@ -67,6 +70,7 @@ int main(int argc, char* argv[]){
     win->onResize(onResize);
     win->onUpdate(onUpdate);
     win->onKey(onKey);
+    win->onClick(onClick);
     win->show();
 }
 void addComponent(void){
@@ -74,8 +78,8 @@ void addComponent(void){
 
     table->render();
     ball->render();
-    player1->render();
-    player2->render();
+    player1->render(new GLfloat[3]{0.90980392156, 0.48235294117, 0.26274509803});
+    player2->render(new GLfloat[3]{0.1, 0.32176470588, 0.86274509803});
     win->render();
 
     glutSwapBuffers();
@@ -97,11 +101,37 @@ void onUpdate(int fps){
 
     glutTimerFunc(fps, onUpdate, fps);
 }
+void onClick(int button, int state, int x, int y)
+{
+    switch(button){
+        case 0: // left click
+            win->zoom();
+            break;
+        case 2: // right click
+            win->zoom(false);
+            break;
+        case 3: // wheel up
+            win->rotate();
+            break;
+        case 4: // wheel down
+            win->rotate(false);
+            break;
+    }
+}
 void onKey(unsigned char key, int x , int y){
     player1->update(key == PLAYER_1_RIGHT, key == PLAYER_1_LEFT);
     player2->update(key == PLAYER_2_RIGHT, key == PLAYER_2_LEFT);
-    if((int)key == ENTER_KEY)
-        run = !run;
+    switch((int)key){
+        case ENTER_KEY:
+            run = !run;
+            break;
+        case ROTATE_UP:
+            win->rotate();
+            break;
+        case ROTATE_DOWN:
+            win->rotate(false);
+            break;
+    }
 }
 
 void score(int player){
@@ -117,13 +147,6 @@ void score(int player){
 }
 
 void gameOver(){
-    run = false;
-    frames = 0;
-    player1_score = 0;
-    player2_score = 0;
-    ball->reset();
-    table->reset();
-
     if(player1_score > player2_score){
         main_message = "Player 1 won!";
     }else if(player2_score > player1_score){
@@ -131,5 +154,12 @@ void gameOver(){
     }else{
         main_message = "DRAW!";
     }
+    run = false;
+    frames = 0;
+    player1_score = 0;
+    player2_score = 0;
+    ball->reset();
+    table->reset();
+
     win->setMainMessage(main_message);
 }

@@ -8,6 +8,7 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Table {
@@ -33,6 +34,7 @@ public:
     void setScore_player2(GLint score_player2) { this->score_player2 = score_player2;  }
     void setTime(GLint time) { this->time = time; }
     void reset();
+    vector<GLfloat*> rect_prizem(GLfloat x, GLfloat y, GLfloat Z, GLfloat w, GLfloat l, GLfloat h);
 };
 
 
