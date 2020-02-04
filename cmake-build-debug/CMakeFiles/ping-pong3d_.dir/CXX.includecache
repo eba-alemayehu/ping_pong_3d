@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Ball.h
+iostream
+-
+GL/gl.h
+-
+GL/glut.h
+-
+vector
+-
+
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Player.h
+iostream
+-
+GL/gl.h
+-
+GL/glut.h
+-
+vector
+-
+
 /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
 GL/gl.h
 -
@@ -16,11 +36,25 @@ iostream
 vector
 -
 
-/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp
-cstring
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Window.h
+GL/gl.h
 -
-vector
+GL/glut.h
 -
-../headers/Table.h
+iostream
+-
+
+/home/eba/Course/Coputer graphics/ping_pong_3d/main.cpp
+iostream
+-
+cmath
+-
+headers/Window.h
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Window.h
+headers/Table.h
 /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
+headers/Ball.h
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Ball.h
+headers/Player.h
+/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Player.h
 

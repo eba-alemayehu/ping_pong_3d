@@ -4,7 +4,6 @@
 #include "headers/Table.h"
 #include "headers/Ball.h"
 #include "headers/Player.h"
-#include "headers/Socket.h"
 
 #define GAME_TIME 30
 #define ENTER_KEY 13
@@ -30,7 +29,6 @@ Table *table;
 Ball *ball;
 Player *player1;
 Player *player2;
-Socket *sock;
 
 char* ip;
 int port;
@@ -48,7 +46,8 @@ int main(int argc, char* argv[]){
     win = new Window(argc, argv, "Ping pong");
     table = new Table(4.0, 6.0, 1.0);
     ball = new Ball(0.2f , 0, 1.00001, 0, 0.5, player_thickness);
-    sock = new Socket(ip, port);
+
+
     player1 = new Player(pair<GLfloat ,GLfloat >(
                         0.0,
                         table->getLength()/2 - player_thickness/2),

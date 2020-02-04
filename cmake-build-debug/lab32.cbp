@@ -90,9 +90,6 @@
 		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Player.h">
 			<Option target="ping-pong3d_"/>
 		</Unit>
-		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Socket.h">
-			<Option target="ping-pong3d_"/>
-		</Unit>
 		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h">
 			<Option target="ping-pong3d_"/>
 		</Unit>
@@ -106,9 +103,6 @@
 			<Option target="ping-pong3d_"/>
 		</Unit>
 		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/src/Player.cpp">
-			<Option target="ping-pong3d_"/>
-		</Unit>
-		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/src/Socket.cpp">
 			<Option target="ping-pong3d_"/>
 		</Unit>
 		<Unit filename="/home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp">

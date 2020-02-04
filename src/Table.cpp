@@ -107,7 +107,7 @@ void Table::render() {
         glVertex3f( this->width/2.0, this->elivation - tickness, -1*this->length/2.0);
     glEnd();
     // Legs
-    glLineWidth(8);
+    glLineWidth(11);
     glBegin(GL_LINES);
         GLfloat leg_length = 2.0f, len_padding = 0.5f;
         glColor3f(0.9f, 0.9f, 0.9f);     // Blue

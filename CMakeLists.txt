@@ -12,7 +12,7 @@ add_executable(ping-pong3d_
         src/Table.cpp headers/Table.h
         src/Player.cpp headers/Player.h
         main.cpp
-        src/Socket.cpp headers/Socket.h)
+        )
 
 target_link_libraries(ping-pong3d_ ${linkers})
 #target_link_libraries(main)

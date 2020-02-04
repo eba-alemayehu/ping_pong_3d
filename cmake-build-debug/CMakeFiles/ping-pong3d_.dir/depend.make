@@ -3,7 +3,6 @@
 
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../headers/Ball.h
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../headers/Player.h
-CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../headers/Socket.h
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../headers/Table.h
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../headers/Window.h
 CMakeFiles/ping-pong3d_.dir/main.cpp.o: ../main.cpp
@@ -13,9 +12,6 @@ CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o: ../src/Ball.cpp
 
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o: ../headers/Player.h
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o: ../src/Player.cpp
-
-CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o: ../headers/Socket.h
-CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o: ../src/Socket.cpp
 
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o: ../headers/Table.h
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o: ../src/Table.cpp

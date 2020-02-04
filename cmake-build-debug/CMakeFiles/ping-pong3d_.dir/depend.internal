@@ -4,7 +4,6 @@
 CMakeFiles/ping-pong3d_.dir/main.cpp.o
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Ball.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Player.h
- /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Socket.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Window.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/main.cpp
@@ -14,9 +13,6 @@ CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o
 CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Player.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/src/Player.cpp
-CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o
- /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Socket.h
- /home/eba/Course/Coputer graphics/ping_pong_3d/src/Socket.cpp
 CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o
  /home/eba/Course/Coputer graphics/ping_pong_3d/headers/Table.h
  /home/eba/Course/Coputer graphics/ping_pong_3d/src/Table.cpp

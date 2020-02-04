@@ -204,33 +204,6 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/ping-pong3d_.dir/build.make CMakeFiles/ping-pong3d_.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
-src/Socket.o: src/Socket.cpp.o
-
-.PHONY : src/Socket.o
-
-# target to build an object file
-src/Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/ping-pong3d_.dir/build.make CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o
-.PHONY : src/Socket.cpp.o
-
-src/Socket.i: src/Socket.cpp.i
-
-.PHONY : src/Socket.i
-
-# target to preprocess a source file
-src/Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/ping-pong3d_.dir/build.make CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.i
-.PHONY : src/Socket.cpp.i
-
-src/Socket.s: src/Socket.cpp.s
-
-.PHONY : src/Socket.s
-
-# target to generate assembly for a file
-src/Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/ping-pong3d_.dir/build.make CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.s
-.PHONY : src/Socket.cpp.s
-
 src/Table.o: src/Table.cpp.o
 
 .PHONY : src/Table.o
@@ -303,9 +276,6 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
-	@echo "... src/Socket.o"
-	@echo "... src/Socket.i"
-	@echo "... src/Socket.s"
 	@echo "... src/Table.o"
 	@echo "... src/Table.i"
 	@echo "... src/Table.s"
