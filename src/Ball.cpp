@@ -10,27 +10,32 @@
 using namespace std;
 
 void Ball::render() {
-    glColor3f(1.0, 0.16666666666,0.48823529411);
     glPolygonMode(GL_FRONT_AND_BACK , GL_FILL);
+    GLfloat height = 0.05, con_h = 0.1;
+    GLfloat x, z;
+    pair<GLfloat, GLfloat> points[362];
+    GLfloat deg2rad = PI/180;
+    for(int teta = 0; teta <= 361; teta++){
+        points[teta].first = xc + r * cos((double)(teta * deg2rad));
+        points[teta].second = zc + r * sin((double)(teta * deg2rad));
+    }
+    GLfloat color_gradiant = 0.1 / 360;
     glBegin(GL_POLYGON);
-        glVertex3f(this->xc, this->yc, this->zc);
-        GLfloat x, z;
-        pair<GLfloat, GLfloat> points[362];
-        GLfloat deg2rad = PI/180;
-        for(int teta = 0; teta <= 361; teta++){
-            points[teta].first = xc + r * cos((double)(teta * deg2rad));
-            points[teta].second = zc + r * sin((double)(teta * deg2rad));
+        glVertex3f(this->xc, this->yc + con_h, this->zc);
+        GLfloat colors[3] = {1.0, 0.16666666666,0.48823529411};
+        for (int j = 0; j < 361; j++){
+            for(int x = 0; x < 3; x++) colors[x] -= color_gradiant;
+            glColor3fv(colors);
+            glVertex3f(points[j].first , yc + height , points[j].second);
         }
-    for (int j = 0; j < 361; j++) glVertex3f(points[j].first, yc, points[j].second);
-//    for (int j = 0; j < 180; j++) glVertex3f(-1 * points[j].first, yc, -1 * points[j].second);
-//    for (int j = 0; j < 45; j++) glVertex3f(-1*points[j].second, yc, points[j].first);
-//    for (int j = 0; j < 45; j++) glVertex3f(-1*points[j].first, yc, points[j].second);
-//    for (int j = 0; j < 45; j++) glVertex3f(-1*points[j].first, yc, -1*points[j].second);
-//    for (int j = 0; j < 45; j++) glVertex3f(points[j].second* -1, yc, -1 * points[j].first);
-//    for (int j = 0; j < 45; j++) glVertex3f(points[j].second, yc, -1 * points[j].first);
-//    for (int j = 0; j < 45; j++) glVertex3f(points[j].first, yc, -1 * points[j].second);
+    glEnd();
 
-
+    glBegin(GL_QUAD_STRIP);
+        glColor3f(1.0 - 0.12, 0.16666666666 - 0.12,0.48823529411 - 0.12);
+        for (int j = 0; j < 361; j++) {
+            glVertex3f(points[j].first, yc + height, points[j].second);
+            glVertex3f(points[j].first, yc, points[j].second);
+        }
     glEnd();
 }
 

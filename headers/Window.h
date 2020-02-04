@@ -23,8 +23,8 @@ private:
 
     char* title = nullptr;
     GLfloat _zoom = -10.0;
-    GLfloat angle = 45.0;
-
+    GLfloat angle[3] = {80.0, 0.0, -45.0};
+    GLfloat axis[3] = {1.0, 0.0, 0.0};
     string main_message;
 public:
     Window(int argv, char* argc[], char* title);
@@ -33,10 +33,11 @@ public:
     void onResize(GLsizei w, GLsizei h);
     void onResize(void (* callback) (GLsizei, GLsizei));
     void onKey(void (* callback)(unsigned char, int, int));
+    void onKeyUp(void (* callback)(unsigned char, int, int));
     void onDisplay(void (* callback)(void));
     void onClick(void (* callback)(int, int, int, int));
     void onUpdate(void (* callback)(int));
-    void rotate(bool forward = true);
+    void rotate(bool forward = true, GLfloat* axis = new GLfloat[3]{1.0, 0.0, 0.0});
     void zoom(bool zoon_in = true);
     void show();
     void createWindow();

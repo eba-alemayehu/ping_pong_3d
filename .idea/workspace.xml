@@ -13,38 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd53f8c-2026-4652-8d1b-7f6cbcbd30de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Player.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Socket.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Table.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lab32.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lab32.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Ball.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ping-pong3d_.dir/src/Window.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ping-pong3d_" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ping-pong3d_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Socket.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Table.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/socket/common.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/socket/receive_file.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/socket/send_file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.1.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Socket.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/common.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/receive_file.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/send_file.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +98,7 @@
       <workItem from="1580410250657" duration="1481000" />
       <workItem from="1580582255058" duration="22466000" />
       <workItem from="1580708972994" duration="2075000" />
-      <workItem from="1580817790310" duration="852000" />
+      <workItem from="1580817790310" duration="7130000" />
     </task>
     <task id="LOCAL-00001" summary="Intial commit">
       <created>1578919165747</created>
@@ -136,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580605171705</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="socket is removed">
+      <created>1580818850287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580818850287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +143,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Intial commit" />
     <MESSAGE value="Final tuch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final tuch" />
+    <MESSAGE value="socket is removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket is removed" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

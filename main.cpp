@@ -9,6 +9,9 @@
 #define ENTER_KEY 13
 #define ROTATE_UP 49
 #define ROTATE_DOWN 113
+#define ROTATE_X 120
+#define ROTATE_Y 121
+#define ROTATE_Z 122
 
 const unsigned char PLAYER_1_RIGHT = 'l';
 const unsigned char PLAYER_1_LEFT = 'j';
@@ -21,6 +24,7 @@ void onResize(GLsizei w, GLsizei h);
 void onUpdate(int fps);
 void score(int player);
 void onKey(unsigned char, int, int);
+void onKeyUp(unsigned char, int, int);
 void gameOver();
 void onClick(int button, int state, int x, int y);
 
@@ -39,6 +43,8 @@ int player2_score = 0;
 int frames = 0;
 bool run = false;
 string main_message = "";
+
+bool z = false, y = false, x = false;
 
 int main(int argc, char* argv[]){
     GLfloat player_thickness = 0.1;
@@ -69,6 +75,7 @@ int main(int argc, char* argv[]){
     win->onResize(onResize);
     win->onUpdate(onUpdate);
     win->onKey(onKey);
+    win->onKeyUp(onKeyUp);
     win->onClick(onClick);
     win->show();
 }
@@ -102,6 +109,8 @@ void onUpdate(int fps){
 }
 void onClick(int button, int state, int x, int y)
 {
+    GLfloat axis[3] = {(GLfloat)::x,(GLfloat)::y,(GLfloat)::z};
+    cout << (GLfloat)::x<<(GLfloat)::y<<(GLfloat)::z <<endl;
     switch(button){
         case 0: // left click
             win->zoom();
@@ -110,16 +119,26 @@ void onClick(int button, int state, int x, int y)
             win->zoom(false);
             break;
         case 3: // wheel up
-            win->rotate();
+            if(::z){
+                win->zoom();
+            }else
+                win->rotate(true, axis);
             break;
         case 4: // wheel down
-            win->rotate(false);
+            if(::z){
+                win->zoom(false);
+            }else
+            win->rotate(false, axis);
             break;
     }
 }
 void onKey(unsigned char key, int x , int y){
     player1->update(key == PLAYER_1_RIGHT, key == PLAYER_1_LEFT);
     player2->update(key == PLAYER_2_RIGHT, key == PLAYER_2_LEFT);
+
+    ::z = (ROTATE_Z == (int)key);
+    ::y = (ROTATE_Y == (int)key);
+    ::x = (ROTATE_X == (int)key);
     switch((int)key){
         case ENTER_KEY:
             run = !run;
@@ -132,7 +151,11 @@ void onKey(unsigned char key, int x , int y){
             break;
     }
 }
-
+void onKeyUp(unsigned char key, int x , int y){
+    ::z = false;
+    ::y = false;
+    ::x = false;
+}
 void score(int player){
     if(player == 1) {
         player2_score++;

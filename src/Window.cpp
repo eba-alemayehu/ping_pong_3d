@@ -70,7 +70,8 @@ void Window::displayInit() {
 
     glLoadIdentity();
     glTranslatef(0.0, 0.0,this->_zoom);
-    glRotatef(this->angle, 1.0, 0.0, 0.0);
+    for(int i = 0; i < 3; i++)
+        glRotatef(this->angle[i], this->axis[0], this->axis[1], this->axis[2]);
 }
 
 void Window::onUpdate(void (*callback)(int)) {
@@ -84,8 +85,12 @@ void Window::render() {
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, this->main_message[i]);
 }
 
-void Window::rotate(bool forward) {
-    this->angle += (forward)? 0.5: -0.5;
+void Window::rotate(bool forward, GLfloat* axis) {
+    GLfloat rate = 0.5;
+
+    this->angle[0] += (forward)? 0.5: -0.5;
+
+
     glutPostRedisplay();
 }
 
@@ -93,3 +98,9 @@ void Window::zoom(bool zoon_in) {
     this->_zoom += (zoon_in)? 0.5: -0.5;
     glutPostRedisplay();
 }
+
+void Window::onKeyUp(void (*callback)(unsigned char, int, int)) {
+    glutKeyboardUpFunc(callback);
+    glutPostRedisplay();
+}
+
